@@ -1,12 +1,15 @@
 public class Main{
     public static void main(String[] args) {
-      
-    // Skapa en klass som heter Vehicle, klassen ska ha en metod som heter drive() 
-    // Skapa en ny klass som också är av typ vechicle, ex motorcycle, car. Låt den klassen ärva Vehicle.
-    // Overrida metoden drive() från Vehicle och skriv ut din egen text i metoden.
+
+        // Fortsätt på klassen Vehicle i föregående exempel. Skapa en konstruktor som har två parametrar
+        // String type och en int amountOfWheels.
+        // Skapa en ny metod i Vehicle som heter displayAmountOfWheels. Den skriver ut type + amountOfWheels.
+        // Låt en subklass ärva från Vehicle och anropa metoden displayAmountOfWheels utan att overrida den.
+
 
 
     Car car1 = new Car("Car");
+    Car car2 = new Car("car", 4);
 
     Motorcycle motorcycle1 = new Motorcycle("Motorcycle");
 
@@ -15,6 +18,8 @@ public class Main{
 
         car1.drive();
         motorcycle1.drive();
+
+        car2.displayAmountOfWheels();
 
 
     }
